@@ -4,6 +4,10 @@
   </a>
 </p>
 
+# Portfolio.v3
+
+Built using the [Next.js Notion Starter Kit](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/) by [Travis Fischer](https://transitivebullsh.it).
+
 ## License
 
 MIT © [Travis Fischer](https://transitivebullsh.it)
