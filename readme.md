@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://v3.kalenwallin.com">
-    <img alt="Portfolio.v3 Homepage" src="https://user-images.githubusercontent.com/552829/160132094-12875e09-41ec-450a-80fc-ae8cd488129d.jpg" width="689">
+    <img alt="Portfolio.v3 Homepage" src="https://v3.kalenwallin.com/versions/v3-2-purple-blue-large-1.svg" width="689">
   </a>
 </p>
 
@@ -8,8 +8,10 @@
 
 Built using the [Next.js Notion Starter Kit](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/) by [Travis Fischer](https://transitivebullsh.it).
 
+Logo designed in Figma. Inspired by the Next.js logo.
+
 ## License
 
 MIT © [Travis Fischer](https://transitivebullsh.it)
 
-Support my open source work by `<a href="https://twitter.com/transitive_bs">`following me on twitter `<img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>`
+Support Travis' open source work by `<a href="https://twitter.com/transitive_bs">`following him on twitter `<img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>`
