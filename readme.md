@@ -6,6 +6,8 @@
 
 # Portfolio.v3
 
+Kalen shares his development experience through career and personal experiences, projects, and more.
+
 Built using the [Next.js Notion Starter Kit](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/) by [Travis Fischer](https://transitivebullsh.it).
 
 Logo designed in Figma. Inspired by the Next.js logo.

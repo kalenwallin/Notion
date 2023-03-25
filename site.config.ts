@@ -9,12 +9,13 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Portfolio.v3 | Kalen Wallin',
+  name: 'Portfolio.v3 ',
   domain: 'v3.kalenwallin.com',
   author: 'Kalen Wallin',
 
   // open graph metadata (optional)
-  description: 'Portfolio.v3 | Kalen Wallin',
+  description:
+    'Kalen shares his development experience through career and personal experiences, projects, and more.',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',

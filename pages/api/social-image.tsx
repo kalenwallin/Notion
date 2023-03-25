@@ -56,7 +56,7 @@ export default async function OGImage(req: NextRequest) {
           alignItems: 'center',
           justifyContent: 'center',
           fontFamily: '"Inter", sans-serif',
-          color: 'black'
+          color: '#fff'
         }}
       >
         {pageInfo.image && (
@@ -103,7 +103,7 @@ export default async function OGImage(req: NextRequest) {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-around',
-              backgroundColor: 'rgba(0,0,0,0.1)',
+              backgroundColor: 'rgba(0,0,0,0.3)',
               padding: 24,
               alignItems: 'center',
               textAlign: 'center'
