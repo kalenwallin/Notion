@@ -103,7 +103,7 @@ export default async function OGImage(req: NextRequest) {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-around',
-              backgroundColor: '#fff',
+              backgroundColor: 'rgba(0,0,0,0.1)',
               padding: 24,
               alignItems: 'center',
               textAlign: 'center'
