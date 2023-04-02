@@ -53,6 +53,7 @@ export async function getStaticPaths() {
 export default function NotionDomainDynamicPage(props) {
   useEffect(() => {
     // Client-side-only code
+    // Prevent sites from referencing themselves in an iframe
     const url =
       window.location != window.parent.location
         ? document.referrer
@@ -60,7 +61,7 @@ export default function NotionDomainDynamicPage(props) {
     console.log(url)
     if (url.includes('v1.kalenwallin.com')) {
       const iframe = document.querySelector(
-        'iframe[src^="https://v3.kalenwallin.com/portfoliov1"]'
+        'iframe[src^="https://v1.kalenwallin.com"]'
       )
       if (iframe) {
         const parent = iframe.parentElement
@@ -68,7 +69,7 @@ export default function NotionDomainDynamicPage(props) {
       }
     } else if (url.includes('v2.kalenwallin.com')) {
       const iframe = document.querySelector(
-        'iframe[src^="https://v3.kalenwallin.com/portfoliov2"]'
+        'iframe[src^="https://v2.kalenwallin.com"]'
       )
       if (iframe) {
         const parent = iframe.parentElement
@@ -76,7 +77,7 @@ export default function NotionDomainDynamicPage(props) {
       }
     } else if (url.includes('v3.kalenwallin.com')) {
       const iframe = document.querySelector(
-        'iframe[src^="https://v3.kalenwallin.com/portfoliov3-development"]'
+        'iframe[src^="https://v3.kalenwallin.com/"]'
       )
       if (iframe) {
         const parent = iframe.parentElement
