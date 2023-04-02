@@ -60,7 +60,7 @@ export default function NotionDomainDynamicPage(props) {
     console.log(url)
     if (url.includes('v1.kalenwallin.com')) {
       const iframe = document.querySelector(
-        'iframe[src^="https://v1.kalenwallin.com/"]'
+        'iframe[src^="https://v3.kalenwallin.com/portfoliov1"]'
       )
       if (iframe) {
         const parent = iframe.parentElement
@@ -68,7 +68,7 @@ export default function NotionDomainDynamicPage(props) {
       }
     } else if (url.includes('v2.kalenwallin.com')) {
       const iframe = document.querySelector(
-        'iframe[src^="https://v2.kalenwallin.com/"]'
+        'iframe[src^="https://v3.kalenwallin.com/portfoliov2"]'
       )
       if (iframe) {
         const parent = iframe.parentElement
@@ -76,7 +76,7 @@ export default function NotionDomainDynamicPage(props) {
       }
     } else if (url.includes('v3.kalenwallin.com')) {
       const iframe = document.querySelector(
-        'iframe[src^="https://v3.kalenwallin.com/"]'
+        'iframe[src^="https://v3.kalenwallin.com/portfoliov3-development"]'
       )
       if (iframe) {
         const parent = iframe.parentElement
