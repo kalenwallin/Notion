@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { GetStaticProps } from 'next'
+import { useEffect } from 'react'
 
 import { NotionPage } from '@/components/NotionPage'
 import { domain, isDev } from '@/lib/config'
@@ -50,5 +51,22 @@ export async function getStaticPaths() {
 }
 
 export default function NotionDomainDynamicPage(props) {
+  useEffect(() => {
+    // Client-side-only code
+    const url =
+      window.location != window.parent.location
+        ? document.referrer
+        : document.location.href
+    console.log(url)
+    if (url.includes('v3.kalenwallin.com')) {
+      const iframe = document.querySelector(
+        'iframe[src^="https://v3.kalenwallin.com/"]'
+      )
+      if (iframe) {
+        const parent = iframe.parentElement
+        parent.style.height = '0px'
+      }
+    }
+  })
   return <NotionPage {...props} />
 }
