@@ -58,3 +58,7 @@ body {
 ::-webkit-scrollbar-track {
   background-color: var(--bg-color);
 }
+
+:root {
+  --bg-color: #e3d9ff;
+}
