@@ -58,7 +58,6 @@ export default function NotionDomainDynamicPage(props) {
       window.location != window.parent.location
         ? document.referrer
         : document.location.href
-    console.log(url)
     if (url.includes('v1.kalenwallin.com')) {
       const iframe = document.querySelector(
         'iframe[src^="https://v1.kalenwallin.com"]'
@@ -83,6 +82,17 @@ export default function NotionDomainDynamicPage(props) {
         const parent = iframe.parentElement
         parent.style.height = '0px'
       }
+    }
+    // find resume pdf and rerender it as an iframe
+    const resume = document.querySelector('div[class^="react-pdf__Document"]')
+    if (resume) {
+      const parent = resume.parentElement
+      parent.setAttribute(
+        'style',
+        'position: relative; overflow: hidden; width: 100%; height: 800px;'
+      )
+      parent.innerHTML =
+        '<iframe src="https://v1.kalenwallin.com/Documents/Resume.pdf" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"></iframe>'
     }
   })
   return <NotionPage {...props} />
