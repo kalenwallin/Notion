@@ -2,6 +2,7 @@
 import * as React from 'react'
 import type { AppProps } from 'next/app'
 
+import { Analytics } from '@vercel/analytics/react'
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css'
 // used for code syntax highlighting (optional)
@@ -24,5 +25,10 @@ if (!isServer) {
 }
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  )
 }
