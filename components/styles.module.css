@@ -25,11 +25,15 @@
 }
 
 .loadingContainer {
-  background-image: url('/versions/v3-2-purple-blue.svg');
   background-size: 10%;
   background-color: #5430b9;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+object.loadingContainer {
+  width: 25h;
+  position: relative;
 }
 
 .loadingIcon {

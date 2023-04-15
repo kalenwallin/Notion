@@ -8,7 +8,7 @@
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next",
       "runtimeArgs": ["dev"],
       "cwd": "${workspaceFolder}",
-      "port": 9229,
+      "port": 3000,
       "smartStep": true,
       "console": "integratedTerminal",
       "skipFiles": ["<node_internals>/**"],
@@ -21,7 +21,7 @@
       "request": "attach",
       "name": "Next.js App",
       "skipFiles": ["<node_internals>/**"],
-      "port": 9229
+      "port": 3000
     }
   ]
 }
