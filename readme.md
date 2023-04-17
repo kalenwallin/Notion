@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://v3.kalenwallin.com">
+  <a href="https://kalenwallin.com">
     <img alt="Portfolio.v3 Homepage" src="https://v3.kalenwallin.com/versions/v3-2-purple-blue-large-1.svg" width="689">
   </a>
 </p>

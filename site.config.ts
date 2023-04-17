@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Portfolio.v3 ',
-  domain: 'v3.kalenwallin.com',
+  domain: 'kalenwallin.com',
   author: 'Kalen Wallin',
 
   // open graph metadata (optional)
