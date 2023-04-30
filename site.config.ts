@@ -15,7 +15,7 @@ export default siteConfig({
 
   // open graph metadata (optional)
   description:
-    'Kalen shares his development experience through career and personal experiences, projects, and more.',
+    'Showcasing his skills through jobs, projects, school transcripts, community service, and life experiences.',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
