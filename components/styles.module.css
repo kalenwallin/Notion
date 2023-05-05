@@ -235,3 +235,20 @@ object.loadingContainer {
 .hidden {
   visibility: hidden;
 }
+
+.likeButton {
+  display: flex;
+  flex-direction: row-reverse;
+  padding:0px;
+}
+
+.likeButton button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.likeButton p {
+  font-size: 23px;
+}
