@@ -1,7 +1,7 @@
 // components/LikeButton.tsx
 import React, { useEffect, useState } from 'react'
 
-import { AiFillHeart } from '@react-icons/all-files/ai/AiFillHeart'
+// import { AiFillHeart } from '@react-icons/all-files/ai/AiFillHeart'
 import { AiOutlineHeart } from '@react-icons/all-files/ai/AiOutlineHeart'
 
 import styles from './styles.module.css'
