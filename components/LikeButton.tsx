@@ -61,10 +61,10 @@ const LikeButton: React.FC<LikeButtonProps> = ({ title }) => {
       className={styles.likeButton}
       style={{ '--likes': likes } as React.CSSProperties}
     >
+      {likes > 0 && <p>{likes}</p>}
       <button onClick={() => postLike()}>
         {!likeAdded ? <AiOutlineHeart /> : <AiFillHeart />}
       </button>
-      {likes > 0 && <p>{likes}</p>}
     </div>
   )
 }

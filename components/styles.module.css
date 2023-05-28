@@ -73,6 +73,11 @@ object.loadingContainer {
   padding: 0.5em;
 }
 
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
 .settings,
 .social {
   user-select: none;
@@ -238,8 +243,8 @@ object.loadingContainer {
 
 .likeButton {
   display: flex;
-  flex-direction: row-reverse;
-  padding:0px;
+  flex-direction: row;
+  padding: 0px;
 }
 
 .likeButton button {
