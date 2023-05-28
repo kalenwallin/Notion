@@ -1,9 +1,8 @@
 // components/LikeButton.tsx
 import React, { useEffect, useState } from 'react'
 
-import { AiFillHeart } from '@react-icons/all-files/ai/AiFillHeart'
-import { AiOutlineHeart } from '@react-icons/all-files/ai/AiOutlineHeart'
-
+// import { AiFillHeart } from '@react-icons/all-files/ai/AiFillHeart'
+// import { AiOutlineHeart } from '@react-icons/all-files/ai/AiOutlineHeart'
 import styles from './styles.module.css'
 
 type LikeButtonProps = {
@@ -40,18 +39,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({ title }) => {
       setLikes(data.likes)
       setLikeAdded(true)
     } else {
-      // Remove like
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ title })
-      })
-
-      const data = await response.json()
-      setLikes(data.likes - 1)
+      setLikes(likes - 1)
       setLikeAdded(false)
     }
   }
@@ -62,9 +50,14 @@ const LikeButton: React.FC<LikeButtonProps> = ({ title }) => {
       style={{ '--likes': likes } as React.CSSProperties}
     >
       {likes > 0 && <p>{likes}</p>}
-      <button onClick={() => postLike()}>
-        {!likeAdded ? <AiOutlineHeart /> : <AiFillHeart />}
-      </button>
+      <div className='placement'>
+        <button
+          className={!likeAdded ? 'is-active' : ''}
+          onClick={() => {
+            postLike()
+          }}
+        ></button>
+      </div>
     </div>
   )
 }
