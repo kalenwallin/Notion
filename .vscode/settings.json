@@ -27,6 +27,7 @@
     "**/jspm_packages/": true,
     "**/lib-cov": true,
     "**/logs": true,
+    "**/node_modules/": true,
     "**/npm-debug.log*": true,
     "**/pids": true,
     "**/typings/": true,
