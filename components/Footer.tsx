@@ -13,7 +13,7 @@ import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
-import LikeButton from './LikeButton'
+// import LikeButton from './LikeButton'
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
@@ -54,9 +54,9 @@ export const FooterImpl: React.FC = () => {
 
       <div className={styles.social}>
         {
-          <a>
-            <LikeButton title='example' />
-          </a>
+          // <a>
+          //   <LikeButton title='example' />
+          // </a>
         }
         {config.twitter && (
           <a
