@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'd0bad8e2e3b244a7ad67a5c33a13363a',
+  rootNotionPageId: '46511b6d397446e18aa16ebe85a40499',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -14,8 +14,7 @@ export default siteConfig({
   author: 'Kalen Wallin',
 
   // open graph metadata (optional)
-  description:
-    'Showcasing his skills through jobs, projects, school transcripts, community service, and life experiences.',
+  description: "Projects I've worked on.",
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
