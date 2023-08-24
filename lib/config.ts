@@ -131,6 +131,11 @@ export const redisNamespace: string | null = getEnv(
   'preview-images'
 )
 
+export const highlightProjectID: string = getEnv(
+  'NEXT_PUBLIC_HIGHLIGHT_PROJECT_ID',
+  'default'
+)
+
 // ----------------------------------------------------------------------------
 
 export const isServer = typeof window === 'undefined'

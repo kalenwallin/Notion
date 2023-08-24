@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@fisch0920/use-dark-mode": "^2.4.0",
+    "@highlight-run/next": "^4.1.0",
     "@jridgewell/sourcemap-codec": "^1.4.15",
     "@keyvhq/core": "^1.6.9",
     "@keyvhq/redis": "^1.6.10",
