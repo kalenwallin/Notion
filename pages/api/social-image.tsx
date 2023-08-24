@@ -15,7 +15,7 @@ const interBoldFontP = fetch(
 ).then((res) => res.arrayBuffer())
 
 export const config = {
-  runtime: 'edge'
+  runtime: 'experimental-edge'
 }
 
 export default async function OGImage(req: NextRequest) {
