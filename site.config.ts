@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Kalen Wallin',
 
   // open graph metadata (optional)
-  description: "Projects I've worked on.",
+  description: "A showcase of my skills through experiences.",
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
