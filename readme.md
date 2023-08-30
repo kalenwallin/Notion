@@ -1,16 +1,7 @@
-<p align="center">
-  <a href="https://kalenwallin.com">
-    <img alt="Portfolio.v3 Homepage" src="https://v3.kalenwallin.com/versions/v3-2-purple-blue-large-1.svg" width="689">
-  </a>
-</p>
-
 # Portfolio.v3
+https://github.com/kalenwallin/portfolio.v3/assets/31481852/7841f9a5-2bbd-4351-82d6-429a42fee6b0
 
-Kalen shares his development experience through career and personal experiences, projects, and more.
-
-Built using the [Next.js Notion Starter Kit](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/) by [Travis Fischer](https://transitivebullsh.it).
-
-Logo designed in Figma. Inspired by the Next.js logo.
+[Learn more about this project on my blog](https://blog.kalenwallin.com/portfoliov3-development/)
 
 ## License
 
