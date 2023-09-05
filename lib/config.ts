@@ -113,23 +113,17 @@ export const isSearchEnabled: boolean = getSiteConfig('isSearchEnabled', true)
 
 // ----------------------------------------------------------------------------
 
-// Optional redis instance for persisting preview images
+// Redis instance for persisting preview images
 export const isRedisEnabled: boolean =
   getSiteConfig('isRedisEnabled', false) || !!getEnv('REDIS_ENABLED', null)
+export const redisUrl: string = getEnv('REDIS_URL', null)
 
-// (if you want to enable redis, only REDIS_HOST and REDIS_PASSWORD are required)
-// we recommend that you store these in a local `.env` file
-export const redisHost: string | null = getEnv('REDIS_HOST', null)
-export const redisPassword: string | null = getEnv('REDIS_PASSWORD', null)
-export const redisUser: string = getEnv('REDIS_USER', 'default')
-export const redisUrl = getEnv(
-  'REDIS_URL',
-  `redis://${redisUser}:${redisPassword}@${redisHost}`
+// Redis with Upstash
+export const upstashRedisToken: string = getEnv(
+  'UPSTASH_REDIS_REST_TOKEN',
+  null
 )
-export const redisNamespace: string | null = getEnv(
-  'REDIS_NAMESPACE',
-  'preview-images'
-)
+export const upstashRedisURL: string = getEnv('UPSTASH_REDIS_REST_URL', null)
 
 export const highlightProjectID: string = getEnv(
   'NEXT_PUBLIC_HIGHLIGHT_PROJECT_ID',

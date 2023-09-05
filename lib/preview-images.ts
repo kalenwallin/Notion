@@ -6,7 +6,7 @@ import pMap from 'p-map'
 import pMemoize from 'p-memoize'
 
 import { defaultPageCover, defaultPageIcon } from './config'
-import { db } from './db'
+import { db_upstash } from './db'
 import { mapImageUrl } from './map-image-url'
 
 export async function getPreviewImageMap(
@@ -40,7 +40,7 @@ async function createPreviewImage(
 ): Promise<PreviewImage | null> {
   try {
     try {
-      const cachedPreviewImage = await db.get(cacheKey)
+      const cachedPreviewImage: any = await db_upstash.get(cacheKey)
       if (cachedPreviewImage) {
         return cachedPreviewImage
       }
@@ -60,7 +60,7 @@ async function createPreviewImage(
     }
 
     try {
-      await db.set(cacheKey, previewImage)
+      await db_upstash.set(cacheKey, previewImage)
     } catch (err) {
       // ignore redis errors
       console.warn(`redis error set "${cacheKey}"`, err.message)

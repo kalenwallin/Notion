@@ -3,7 +3,7 @@ import { parsePageId } from 'notion-utils'
 
 import * as acl from './acl'
 import { environment, pageUrlAdditions, pageUrlOverrides, site } from './config'
-import { db } from './db'
+import { db_upstash } from './db'
 import { getSiteMap } from './get-site-map'
 import { getPage } from './notion'
 
@@ -34,7 +34,7 @@ export async function resolveNotionPage(domain: string, rawPageId?: string) {
     if (!pageId && useUriToPageIdCache) {
       try {
         // check if the database has a cached mapping of this URI to page ID
-        pageId = await db.get(cacheKey)
+        pageId = await db_upstash.get(cacheKey)
 
         // console.log(`redis get "${cacheKey}"`, pageId)
       } catch (err) {
@@ -61,7 +61,7 @@ export async function resolveNotionPage(domain: string, rawPageId?: string) {
         if (useUriToPageIdCache) {
           try {
             // update the database mapping of URI to pageId
-            await db.set(cacheKey, pageId, cacheTTL)
+            await db_upstash.set(cacheKey, pageId, cacheTTL)
 
             // console.log(`redis set "${cacheKey}"`, pageId, { cacheTTL })
           } catch (err) {

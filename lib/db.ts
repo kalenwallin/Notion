@@ -1,14 +1,14 @@
-import Keyv from '@keyvhq/core'
-import KeyvRedis from '@keyvhq/redis'
+import { Redis } from '@upstash/redis'
 
-import { isRedisEnabled, redisNamespace, redisUrl } from './config'
+import { isRedisEnabled, upstashRedisToken, upstashRedisURL } from './config'
 
-let db: Keyv
+let db_upstash: Redis
 if (isRedisEnabled) {
-  const keyvRedis = new KeyvRedis(redisUrl)
-  db = new Keyv({ store: keyvRedis, namespace: redisNamespace || undefined })
-} else {
-  db = new Keyv()
+  const upstashRedis = new Redis({
+    url: upstashRedisURL,
+    token: upstashRedisToken
+  })
+  db_upstash = upstashRedis
 }
 
-export { db }
+export { db_upstash }

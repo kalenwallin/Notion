@@ -32,6 +32,7 @@
     "@keyvhq/core": "^1.6.9",
     "@keyvhq/redis": "^1.6.10",
     "@react-icons/all-files": "^4.1.0",
+    "@upstash/redis": "^1.22.0",
     "@vercel/analytics": "^0.1.11",
     "@vercel/og": "^0.0.19",
     "caniuse-lite": "^1.0.30001489",
