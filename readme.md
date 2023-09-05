@@ -17,4 +17,5 @@ https://github.com/kalenwallin/portfolio.v3/assets/31481852/7841f9a5-2bbd-4351-8
 
 MIT © [Travis Fischer](https://transitivebullsh.it)
 
-Support Travis' open source work by `<a href="https://twitter.com/transitive_bs">`following him on twitter `<img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>`
+Support Travis' open-source work by 
+<a href="https://twitter.com/transitive_bs">following him on twitter<img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
