@@ -184,6 +184,10 @@
   justify-content: center;
 }
 
+.notion-collection-row-property:nth-child(n+4) {
+  display: none;
+}
+
 .notion-collection-row-value {
   display: flex;
   align-items: center;
