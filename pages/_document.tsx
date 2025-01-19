@@ -1,7 +1,5 @@
-import * as React from 'react'
-import Document, { Head, Html, Main, NextScript } from 'next/document'
-
 import { IconContext } from '@react-icons/all-files'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
   render() {
@@ -14,6 +12,7 @@ export default class MyDocument extends Document {
               sizes='180x180'
               href='/apple-touch-icon.png'
             />
+            <link rel='shortcut icon' href='/favicon.ico' />
             <link
               rel='icon'
               type='image/png'
@@ -29,6 +28,7 @@ export default class MyDocument extends Document {
             <link rel='manifest' href='/site.webmanifest' />
             <meta name='msapplication-TileColor' content='#da532c' />
             <meta name='theme-color' content='#ffffff'></meta>
+            <link rel='manifest' href='/manifest.json' />
           </Head>
 
           <body>

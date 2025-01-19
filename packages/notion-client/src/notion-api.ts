@@ -567,6 +567,7 @@ export class NotionAPI {
         editedBy: [],
         lastEditedTime: {},
         createdTime: {},
+        public: true,
         ...params.filters
       }
     }

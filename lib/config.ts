@@ -125,11 +125,6 @@ export const upstashRedisToken: string = getEnv(
 )
 export const upstashRedisURL: string = getEnv('UPSTASH_REDIS_REST_URL', null)
 
-export const highlightProjectID: string = getEnv(
-  'NEXT_PUBLIC_HIGHLIGHT_PROJECT_ID',
-  'default'
-)
-
 // ----------------------------------------------------------------------------
 
 export const isServer = typeof window === 'undefined'

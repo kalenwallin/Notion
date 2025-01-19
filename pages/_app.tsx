@@ -2,8 +2,6 @@
 import * as React from 'react'
 import type { AppProps } from 'next/app'
 
-import { HighlightInit } from '@highlight-run/next/client'
-import { ErrorBoundary } from '@highlight-run/next/client'
 import { Analytics } from '@vercel/analytics/react'
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css'
@@ -20,7 +18,7 @@ import 'styles/notion.css'
 import 'styles/prism-theme.css'
 
 import { bootstrap } from '@/lib/bootstrap-client'
-import { highlightProjectID, isServer } from '@/lib/config'
+import { isServer } from '@/lib/config'
 
 if (!isServer) {
   bootstrap()
@@ -29,22 +27,9 @@ if (!isServer) {
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* Highlight.io Error Catch */}
-      <ErrorBoundary>
-        <Component {...pageProps} />
-      </ErrorBoundary>
+      <Component {...pageProps} />
       {/* Vercel Analytics */}
       <Analytics />
-      {/* Highlight.io Client SDK */}
-      <HighlightInit
-        projectId={highlightProjectID}
-        tracingOrigins
-        networkRecording={{
-          enabled: true,
-          recordHeadersAndBody: true,
-          urlBlocklist: []
-        }}
-      />
     </>
   )
 }

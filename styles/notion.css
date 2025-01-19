@@ -46,6 +46,7 @@
 .notion-header .notion-nav-header {
   max-width: 1100px;
   margin: 0 auto;
+  overflow-x: auto;
 }
 
 .notion-nav-header-rhs {
@@ -341,24 +342,25 @@
 }
 
 /* if you don't want rounded page icon images, remove this */
-/* .notion-page-icon-hero.notion-page-icon-image {
+.notion-page-icon-hero.notion-page-icon-image {
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }
+
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
   border-radius: 50%;
-} */
+}
 
 .notion-header {
-  background: transparent;
-  backdrop-filter: saturate(180%) blur(8px);
+  background: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: saturate(180%) blur(16px);
 }
 
 .dark-mode .notion-header {
   background: transparent;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-  backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 /* Workaround for Firefox not supporting backdrop-filter yet */
@@ -379,4 +381,70 @@
 
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
   display: none;
+}
+
+.notion-search .searchBar {
+  box-shadow: var(--fg-color-0) 0px 1px 0px;
+}
+
+.notion-search .noResults {
+  color: var(--fg-color-3);
+}
+
+.notion-search .noResultsDetail {
+  color: var(--fg-color-2);
+}
+
+.notion-equation.notion-equation-block {
+  align-items: center;
+}
+
+.dark-mode .notion-item-default {
+  --notion-item-default: #373737;
+  --notion-item-text-default: white;
+}
+
+.dark-mode .notion-item-green {
+  --notion-item-green: #2B593F;
+  --notion-item-text-green: white;
+}
+
+.dark-mode .notion-item-red {
+  --notion-item-red: #6E3530;
+  --notion-item-text-red: white;
+}
+
+.dark-mode .notion-item-purple {
+  --notion-item-purple: #492F64;
+  --notion-item-text-purple: white;
+}
+
+.dark-mode .notion-item-blue {
+  --notion-item-blue: #28456C;
+  --notion-item-text-blue: white;
+}
+
+.dark-mode .notion-item-gray {
+  --notion-item-gray: #5A5A5A;
+  --notion-item-text-gray: white;
+}
+
+.dark-mode .notion-item-pink {
+  --notion-item-pink: #69304C;
+  --notion-item-text-pink: white;
+}
+
+.dark-mode .notion-item-orange {
+  --notion-item-orange: #854C1D;
+  --notion-item-text-orange: white;
+}
+
+.dark-mode .notion-item-brown {
+  --notion-item-brown: #603B2C;
+  --notion-item-text-brown: white;
+}
+
+.dark-mode .notion-item-yellow {
+  --notion-item-yellow: #8A632A;
+  --notion-item-text-yellow: white;
 }

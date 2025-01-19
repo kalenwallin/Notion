@@ -4,7 +4,8 @@
   }
 }
 
-.container, .loadingContainer {
+.container,
+.loadingContainer {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,6 +23,7 @@
   background-color: #5430b9;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
     'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: var(--bg-color);
 }
 
 .loadingContainer {
@@ -71,11 +73,6 @@ object.loadingContainer {
 .copyright {
   font-size: 80%;
   padding: 0.5em;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
 }
 
 .settings,
@@ -239,54 +236,4 @@ object.loadingContainer {
 
 .hidden {
   visibility: hidden;
-}
-
-.likeButton {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-}
-
-.likeButton button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 1.2em;
-  width: 100%;
-  padding-top: 2px;
-  color: white;
-}
-
-.likeButton .placement {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.likeButton button:hover {
-  color: #e0265e;
-}
-
-.likeButton button {
-  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
-  background-position: 0 0;
-  width: 40px;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  transition: background-position 1s steps(28);
-  transition-duration: 0s;
-  margin-right: -1rem;
-  padding-left: 3rem;
-
-}
-
-.likeButton button.is-active {
-  transition-duration: 1s;
-  background-position: -2800px 0;
-}
-
-.likeButton p {
-  font-size: 23px;
 }
