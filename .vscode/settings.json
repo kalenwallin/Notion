@@ -21,19 +21,15 @@
     "**/*.seed": true,
     "**/*.tgz": true,
     "**/bower_components": true,
-    "**/build/": true,
     "**/coverage": true,
-    "**/dist/": true,
     "**/jspm_packages/": true,
     "**/lib-cov": true,
     "**/logs": true,
-    "**/node_modules/": true,
     "**/npm-debug.log*": true,
     "**/pids": true,
     "**/typings/": true,
     "**/yarn-debug.log*": true,
-    "**/yarn-error.log*": true,
-    "build/Release": true
+    "**/yarn-error.log*": true
   },
   "svg.preview.background": "black"
 }
